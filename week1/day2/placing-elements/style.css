@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: start;
+}
+
+#menu {
+    background-color: rgb(237, 181, 76);
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: start;
+}
+
+header {
+    border: 1px black dotted;
+    padding: 4px;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.cell {
+    width: 50%;
+    display: table-cell;
+}
+
+.cell.second {
+    text-align: end;
+}
+
+.container {
+    background-color: aqua;
+    height: 50vh;
+}
+
+.red {
+    background-color: red;
+    margin: 4px 0;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.container {
+  position: relative;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+}
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
