@@ -1,6 +1,9 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    clear: both;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
 }
 
 header {
@@ -64,4 +67,45 @@ h2 {
 #eye_catcher {
     margin: auto;
     padding-top: 17vh;
+}
+
+#bragging {
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#bragging_statements {
+    margin: 0, auto;
+}
+
+#stat_1 {
+    display: inline-block;
+    margin: 20px;
+}
+
+#stat_1_img {
+    height: 75px;
+    float: left;
+    margin-right: 20px;
+}
+
+#stat_1_p {
+    display: inline-block;
+    text-align: left;
+    width: 240px;
+}
+
+footer {
+    background-color: #777;
+    height: 30px;
+    line-height: 25px;
+}
+
+#copy {
+    font-size: 10px;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 20px;
 }

@@ -28,24 +28,21 @@ waitThenRun(stage2);
 
 function orderOfMagnitude(start) {
     let j = start;
-    if (j <= 0) {
+    if (j <= 0 || isNaN(j)) {
         return "ERROR!";
-    } else if (isNaN(j)) {
-        return "ERROR!";
-    } else if (j < 1000000) {
-        do {
-            j *= 10;
-        } while (j < 1000000);
+    }
+    if (j >= 1000000) {
         return j;
-    } else if (j >= 1000000) {
-        return j;
+    }
+    if (j < 1000000) {
+        return orderOfMagnitude(j * 10);
     }
 }
 
-let k = orderOfMagnitude(290);
+let k = orderOfMagnitude(-3);
 console.log(k);
 
-// ad bonus
+// ad bonus see: js closure
 
 let valSoFar = 0;
 
@@ -62,3 +59,9 @@ everSum(4);
 everSum(4);
 
 console.log(valSoFar);
+
+// function sumUp(p) {
+
+// }
+
+// let totaler = sumUp();
