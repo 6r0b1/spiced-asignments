@@ -1,17 +1,4 @@
-// ad 1
-
-function sum() {
-    let result = 0;
-    for (let i = 0; i < arguments.length; i++) {
-        result += arguments[i];
-    }
-    return result;
-}
-
-let x = sum(3, 4, 8, 9);
-console.log(x);
-
-// ad 2
+// Exercise 2
 
 function waitThenRun(call) {
     console.log("Hello!");
@@ -24,7 +11,20 @@ function stage2() {
 
 waitThenRun(stage2);
 
-// ad 3
+// Exercise 1
+
+function sum() {
+    let result = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        result += arguments[i];
+    }
+    return result;
+}
+
+let x = sum(3, 4, 8, 9);
+console.log(x);
+
+// Exercise 3
 
 function orderOfMagnitude(start) {
     let j = start;
@@ -39,29 +39,21 @@ function orderOfMagnitude(start) {
     }
 }
 
-let k = orderOfMagnitude(-3);
+let k = orderOfMagnitude(-2);
 console.log(k);
 
-// ad bonus see: js closure
+// Exercise bonus see: js closure
 
-let valSoFar = 0;
-
-function everSum(l) {
-    valSoFar += l;
-    return function () {
-        return valSoFar;
+function getTotaler() {
+    let sum = 0;
+    return function sumUp(v) {
+        sum += v;
+        console.log(sum);
     };
 }
 
-everSum(4);
-everSum(4);
-everSum(4);
-everSum(4);
+let thisWorks = getTotaler();
 
-console.log(valSoFar);
-
-// function sumUp(p) {
-
-// }
-
-// let totaler = sumUp();
+thisWorks(3);
+thisWorks(3);
+thisWorks(3);
