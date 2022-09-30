@@ -89,6 +89,7 @@ h2 {
 #stat_1 {
     display: inline-block;
     margin: 20px;
+    vertical-align: top;
 }
 
 #stat_1_img {
