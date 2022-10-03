@@ -6,12 +6,31 @@ function each(objectOrArray, someCallback) {
     testCase = objectOrArray;
     console.log(testCase);
     if (Array.isArray(testCase)) {
-        testCase.forEach((element) => someCallback(testCase.indexOf(element)));
+        testCase.forEach((element) =>
+            someCallback(
+                testCase[testCase.indexOf(element)],
+                testCase.indexOf(element)
+            )
+        );
+    } else {
+        for (var x in testCase) {
+            someCallback(x, [testCase[x]]);
+        }
     }
 }
 
-each([3, 4], function (sayThis) {
-    console.log(testCase[sayThis]);
+each(
+    {
+        a: 1,
+        b: 2,
+    },
+    function (val, name) {
+        console.log("The value of " + name + " is " + val);
+    }
+);
+
+each(["a", "b"], function (val, idx) {
+    console.log("The value of item " + idx + " is " + val);
 });
 
 // exercise 2
