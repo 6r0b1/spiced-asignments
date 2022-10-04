@@ -44,18 +44,19 @@ console.log(invertedString);
 
 // bonus
 
-function delay(tMinus) {
-    setTimeout(() => {
-        console.log(tMinus);
-    }, 1000);
-}
-
 function Countdown(time) {
     this.time = time;
-    this.start = () => {
-        for (let index = this.time; index >= 0; index--) {
-            delay(index);
+    this.start = function () {
+        function innerCountDown(tMinus) {
+            setTimeout(() => {
+                console.log(tMinus);
+                if (tMinus > 0) {
+                    innerCountDown(tMinus - 1);
+                }
+            }, 1000);
         }
+        let tMinus = this.time;
+        innerCountDown(tMinus);
     };
 }
 
