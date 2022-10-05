@@ -47,6 +47,7 @@ console.log(invertedString);
 function Countdown(time) {
     this.time = time;
     this.start = function () {
+        console.log(this.time);
         function innerCountDown(tMinus) {
             setTimeout(() => {
                 console.log(tMinus);
@@ -55,7 +56,7 @@ function Countdown(time) {
                 }
             }, 1000);
         }
-        let tMinus = this.time;
+        let tMinus = this.time - 1;
         innerCountDown(tMinus);
     };
 }
