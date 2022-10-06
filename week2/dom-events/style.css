@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    clear: both;
+}
+
+#moving {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    z-index: 0;
+}
+
+#blockade_text {
+    z-index: 1;
+}
+
+#changing {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
