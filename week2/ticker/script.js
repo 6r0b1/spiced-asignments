@@ -32,11 +32,6 @@ cancelAnimationFrame(requestID);
     for (let i = 0; i < eventItems.length; i++) {
         eventItems[i].addEventListener("mouseenter", stopThis);
         eventItems[i].addEventListener("mouseleave", moveAlong);
-        
-    
-
-
-    
 }
 
 
