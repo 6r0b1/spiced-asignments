@@ -31,7 +31,7 @@
 
     //  exercise 3
 
-    //  random color generator
+    //  begin random color generator
 
     function rcg() {
         let charSpace = "1234567890ABCDEF";
@@ -43,7 +43,7 @@
         return randomColor;
     }
 
-    //  actually do the thing
+    //  rcg, actually do the thing
 
     function changeNow(what) {
         what.style.backgroundColor = rcg();

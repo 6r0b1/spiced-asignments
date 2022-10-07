@@ -47,7 +47,7 @@ console.log(invertedString);
 function Countdown(time) {
     this.time = time;
     this.start = function () {
-        console.log(this.time);
+        console.log(this.time); // start rightaway, not after 1 sec
         function innerCountDown(tMinus) {
             setTimeout(() => {
                 console.log(tMinus);
