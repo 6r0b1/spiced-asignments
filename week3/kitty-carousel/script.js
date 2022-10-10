@@ -37,7 +37,7 @@
             // listener is only on images, not on dots
             let stageLeft = document.querySelector(".carousel_stage_left");
             stageLeft.classList.remove("carousel_stage_left");
-            dotIndicators[kittyCount].classList.add("active_dot");
+            dotIndicators[kittyCount].classList.add("active_dot"); // Would like to have the dot show up a little before transitionend ...
         });
         // wierd stuff happens when changing tab
         // ask about it
