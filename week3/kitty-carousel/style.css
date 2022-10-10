@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel_outer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel_inner {
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+}
+
+.img_1 {
+    background-image: url(./assets/kit1.jpg);
+    background-size: cover;
+    position: absolute;
+}
+
+.img_2 {
+    background-image: url(./assets/kit2.jpg);
+    background-size: cover;
+    position: absolute;
+}
+
+.img_3 {
+    background-image: url(./assets/kit3.jpg);
+    background-size: cover;
+    position: absolute;
+}
+
+.img_4 {
+    background-image: url(./assets/kit4.jpg);
+    background-size: cover;
+    position: absolute;
+}
+
+.carousel_onscreen {
+    transform: translateX(0%);
+    transition: 1500ms ease-in-out;
+}
+
+.carousel_stage_left {
+    transform: translateX(-100%);
+    transition: 1500ms ease-in-out;
+}
+
+/* need indicator and indicator active */
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.indicator_dot {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 5px;
+    transition: 80ms;
+}
+
+.active_dot {
+    background-color: #fff;
+}
