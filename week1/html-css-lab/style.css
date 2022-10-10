@@ -26,6 +26,8 @@ header {
     margin-right: 10;
     display: inline-block;
     float: right;
+    background-image: url(./assets/close.webp);
+    background-size: cover;
 }
 
 #logo_img {
