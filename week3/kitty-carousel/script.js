@@ -73,6 +73,45 @@
             }
         });
     }
+
+    // Listen to touch events in the carousel area
+    let touchArea = document.querySelector(".carousel_outer");
+    let clientX;
+
+    touchArea.addEventListener("touchstart", (e) => {
+        // record start of touch
+        clientX = e.touches[0].clientX;
+    });
+
+    touchArea.addEventListener("touchend", (e) => {
+        let deltaX;
+
+        // record end of touch and compare to start
+        deltaX = e.changedTouches[0].clientX - clientX;
+
+        if (deltaX < -10) {
+            console.log("vor");
+            if (transitionEnded === 1) {
+                clearTimeout(frameID);
+                frameID = setTimeout(moveCarousel, 150);
+            }
+        } else if (deltaX > 10) {
+            console.log("zurueck");
+            if (transitionEnded === 1) {
+                clearTimeout(frameID);
+                imageDivs[kittyCount].classList.remove("carousel_onscreen");
+                dotIndicators[kittyCount].classList.remove("active_dot");
+                kittyCount--;
+                if (kittyCount <= 0) {
+                    kittyCount = 3;
+                }
+                imageDivs[kittyCount].classList.remove("carousel_stage_left");
+                imageDivs[kittyCount].classList.add("carousel_onscreen");
+                dotIndicators[kittyCount].classList.add("active_dot");
+                frameID = setTimeout(moveCarousel, 3000);
+            }
+        }
+    });
 })();
 
 // Add and remove bacground to the indicator much the same way
