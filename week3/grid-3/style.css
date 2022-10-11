@@ -1,0 +1,41 @@
+* {
+    clear: both;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.outer {
+    width: 100px;
+    height: 100px;
+    display: grid inline;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    background-color: deepskyblue;
+    margin: 5px;
+}
+
+#inner1 {
+    background-color: pink;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#inner2 {
+    background-color: pink;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#inner3 {
+    background-color: pink;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#inner4 {
+    background-color: pink;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 70px 1fr 30px;
+    min-height: 100vh;
+}
+
+header {
+    background-color: chartreuse;
+}
+
+main {
+    background-color: cyan;
+}
+
+footer {
+    background-color: deeppink;
+}
