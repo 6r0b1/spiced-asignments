@@ -6,7 +6,7 @@
 
 .carousel_outer {
     width: 100vw;
-    height: 100vh;
+    height: 600px;
     overflow: hidden;
     position: relative;
 }

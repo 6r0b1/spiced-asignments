@@ -4,6 +4,7 @@
     let dotIndicators = document.querySelectorAll(".indicator_dot");
 
     let kittyCount = 0; // Need an indicator when finished, so some kind of index
+    let frameID;
 
     function moveCarousel() {
         // Starting with an image already on screen,
@@ -35,7 +36,7 @@
         // Would like to have the dot show up a little before transitionend
         // ... put it outside the listener then
         dotIndicators[kittyCount].classList.add("active_dot");
-        setTimeout(moveCarousel, 3000);
+        frameID = setTimeout(moveCarousel, 3000);
 
         stageLeft.addEventListener("transitionend", function () {
             // listener is only on images, not on dots
@@ -45,18 +46,20 @@
         // ask about it
     }
 
-    setTimeout(moveCarousel, 1000);
+    frameID = setTimeout(moveCarousel, 1000);
 
     // Add on click to dotIndicators, use for loop
 
     for (let i = 0; i < dotIndicators.length; i++) {
         dotIndicators[i].addEventListener("click", function () {
+            clearTimeout(frameID);
             imageDivs[kittyCount].classList.remove("carousel_onscreen");
             imageDivs[kittyCount].classList.add("carousel_stage_left");
             dotIndicators[kittyCount].classList.remove("active_dot");
             kittyCount = i;
             imageDivs[kittyCount].classList.add("carousel_onscreen");
             dotIndicators[kittyCount].classList.add("active_dot");
+            frameID = setTimeout(moveCarousel, 3000);
         });
     }
 })();
