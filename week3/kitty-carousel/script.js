@@ -60,9 +60,12 @@
                 console.log("nope");
             } else if (transitionEnded === 1) {
                 clearTimeout(frameID);
+
+                // same as moveCarousel just update cittyCount is different
                 imageDivs[kittyCount].classList.remove("carousel_onscreen");
                 imageDivs[kittyCount].classList.add("carousel_stage_left");
                 dotIndicators[kittyCount].classList.remove("active_dot");
+                // don t increment cittyCount but update to i, the clicked dot s index
                 kittyCount = i;
                 imageDivs[kittyCount].classList.add("carousel_onscreen");
                 dotIndicators[kittyCount].classList.add("active_dot");
