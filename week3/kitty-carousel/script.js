@@ -5,6 +5,7 @@
 
     let kittyCount = 0; // Need an indicator when finished, so some kind of index
     let frameID;
+    let transitionEnded = 0;
 
     function moveCarousel() {
         // Starting with an image already on screen,
@@ -12,6 +13,7 @@
         imageDivs[kittyCount].classList.remove("carousel_onscreen");
         imageDivs[kittyCount].classList.add("carousel_stage_left");
         dotIndicators[kittyCount].classList.remove("active_dot");
+        transitionEnded = 0;
 
         // Increase count to address next image
         kittyCount++;
@@ -39,6 +41,7 @@
         frameID = setTimeout(moveCarousel, 3000);
 
         stageLeft.addEventListener("transitionend", function () {
+            transitionEnded = 1;
             // listener is only on images, not on dots
             stageLeft.classList.remove("carousel_stage_left");
         });
@@ -52,16 +55,28 @@
 
     for (let i = 0; i < dotIndicators.length; i++) {
         dotIndicators[i].addEventListener("click", function () {
-            clearTimeout(frameID);
-            imageDivs[kittyCount].classList.remove("carousel_onscreen");
-            imageDivs[kittyCount].classList.add("carousel_stage_left");
-            dotIndicators[kittyCount].classList.remove("active_dot");
-            kittyCount = i;
-            imageDivs[kittyCount].classList.add("carousel_onscreen");
-            dotIndicators[kittyCount].classList.add("active_dot");
-            frameID = setTimeout(moveCarousel, 3000);
+            console.log(transitionEnded);
+            if (kittyCount === i) {
+                console.log("nope");
+            } else if (transitionEnded === 1) {
+                clearTimeout(frameID);
+                imageDivs[kittyCount].classList.remove("carousel_onscreen");
+                imageDivs[kittyCount].classList.add("carousel_stage_left");
+                dotIndicators[kittyCount].classList.remove("active_dot");
+                kittyCount = i;
+                imageDivs[kittyCount].classList.add("carousel_onscreen");
+                dotIndicators[kittyCount].classList.add("active_dot");
+                stageLeft = document.querySelector(".carousel_stage_left");
+                frameID = setTimeout(moveCarousel, 3000);
+            } else {
+                console.log("nope");
+            }
         });
     }
 })();
 
 // Add and remove bacground to the indicator much the same way
+
+// if (dotIndicators[i].classList.contains("carousel_onscreen")) {
+//                 console.log("nope");
+//             } else

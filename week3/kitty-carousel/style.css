@@ -6,7 +6,7 @@
 
 .carousel_outer {
     width: 100vw;
-    height: 600px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -20,24 +20,28 @@
 .img_1 {
     background-image: url(./assets/kit1.jpg);
     background-size: cover;
+    background-position: center;
     position: absolute;
 }
 
 .img_2 {
     background-image: url(./assets/kit2.jpg);
     background-size: cover;
+    background-position: center;
     position: absolute;
 }
 
 .img_3 {
     background-image: url(./assets/kit3.jpg);
     background-size: cover;
+    background-position: center;
     position: absolute;
 }
 
 .img_4 {
     background-image: url(./assets/kit4.jpg);
     background-size: cover;
+    background-position: center;
     position: absolute;
 }
 
