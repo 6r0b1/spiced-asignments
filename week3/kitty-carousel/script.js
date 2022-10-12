@@ -45,19 +45,23 @@
             // listener is only on images, not on dots
             stageLeft.classList.remove("carousel_stage_left");
         });
-        // wierd stuff happens when changing tab
-        // ask about it
     }
 
     frameID = setTimeout(moveCarousel, 1000);
+
+    // nav +++ nav +++ nav
+
+    // ---     ---     ---
 
     // Add on click to dotIndicators, use for loop
 
     for (let i = 0; i < dotIndicators.length; i++) {
         dotIndicators[i].addEventListener("click", function () {
             console.log(transitionEnded);
+            // check if klick on active dot
             if (kittyCount === i) {
                 console.log("nope");
+                // check if transition in progress see line 44
             } else if (transitionEnded === 1) {
                 clearTimeout(frameID);
 
@@ -77,6 +81,10 @@
         });
     }
 
+    // touch +++ touch +++ touch
+
+    // -----     -----     -----
+
     // Listen to touch events in the carousel area
     let touchArea = document.querySelector(".carousel_outer");
     let clientX;
@@ -92,12 +100,15 @@
         // record end of touch and compare to start
         deltaX = e.changedTouches[0].clientX - clientX;
 
+        // swipe left : just initiate the move carousel
         if (deltaX < -10) {
             console.log("vor");
             if (transitionEnded === 1) {
                 clearTimeout(frameID);
                 frameID = setTimeout(moveCarousel, 150);
             }
+
+            // swipe right: need a way to move in image from the left
         } else if (deltaX > 10) {
             console.log("zurueck");
             if (transitionEnded === 1) {
@@ -105,9 +116,10 @@
                 imageDivs[kittyCount].classList.remove("carousel_onscreen");
                 dotIndicators[kittyCount].classList.remove("active_dot");
                 kittyCount--;
-                if (kittyCount <= 0) {
+                if (kittyCount < 0) {
                     kittyCount = 3;
                 }
+                // stage left was already removed before, so nothing slides in from left
                 imageDivs[kittyCount].classList.remove("carousel_stage_left");
                 imageDivs[kittyCount].classList.add("carousel_onscreen");
                 dotIndicators[kittyCount].classList.add("active_dot");
