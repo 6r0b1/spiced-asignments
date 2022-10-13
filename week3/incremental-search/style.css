@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.suggestions {
+    margin: 10px 5px;
+}
+
+.sugestions_hidden {
+    display: none;
+}
+
+.results {
+}
