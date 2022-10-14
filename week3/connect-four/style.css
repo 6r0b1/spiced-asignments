@@ -1,0 +1,6 @@
+.column {
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline;
+}
