@@ -1,6 +1,23 @@
+.gameBoard {
+    display: flex;
+}
+
 .column {
-    height: 50px;
+    display: flex;
+    height: 100vh;
     width: 200px;
     border: 2px solid black;
-    display: inline;
+    flex-direction: column-reverse;
+}
+
+.player1 {
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.player2 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
 }
