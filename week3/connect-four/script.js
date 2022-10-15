@@ -1,3 +1,5 @@
+// the playing field (let s hope it s level)
+
 let board = [
     [0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0],
@@ -7,7 +9,8 @@ let board = [
     [0, 0, 0, 0, 0, 0, 0],
 ];
 
-// neccessary variables
+// some variables
+
 let columns = document.querySelectorAll(".column");
 let gameBoard = document.querySelector(".gameBoard");
 
@@ -18,9 +21,25 @@ let countFour;
 let lastUpdateLine; // index 1
 let selectedColumn; // index 2
 
-// neccessary function(s)
+// event listener(s) to update game state
+
+for (let i = 0; i < columns.length; i++) {
+    columns[i].addEventListener("mousedown", function () {
+        if (playCount % 2 === 0) {
+            currentPlayer = 1;
+        } else {
+            currentPlayer = 2;
+        }
+        selectedColumn = i;
+        updateGameState(selectedColumn, currentPlayer);
+        checkWin();
+    });
+}
+
+// some function(s)
 
 // update the game state
+
 function updateGameState(selectedColumn, currentPlayer) {
     if (board[0][selectedColumn] === 0) {
         for (let j = board.length - 1; j >= 0; j--) {
@@ -29,6 +48,8 @@ function updateGameState(selectedColumn, currentPlayer) {
                 lastUpdateLine = j;
                 playCount++;
                 console.log(board);
+                columns[selectedColumn].innerHTML +=
+                    '<div class="player' + currentPlayer + '"></div>';
                 break;
             }
         }
@@ -55,22 +76,21 @@ function youWin() {
     }, 1000);
 }
 
-// check winning condition
+// check winning conditions
+
 function checkWin() {
     countFour = 0;
+
     // vertically
-    for (let i = 1; i < 4; i++) {
-        lastUpdateLine += i;
-        if (lastUpdateLine < 6) {
-            if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-                countFour++;
-                if (countFour === 3) {
-                    youWin();
-                }
-                lastUpdateLine -= i;
-            } else {
-                break;
+
+    for (let i = 0; i < board.length; i++) {
+        if (board[i][selectedColumn] === currentPlayer) {
+            countFour++;
+            if (countFour === 4) {
+                youWin();
             }
+        } else {
+            countFour = 0;
         }
     }
 
@@ -78,18 +98,17 @@ function checkWin() {
 
     // horizontally
 
-    //     for (let k = 0; k < board.length; k++) {
-    //         for (let l = 0; l < board[k].length; l++) {
-    //             if (board[k][l] === currentPlayer) {
-    //                 countFour++;
-    //                 if (countFour === 4) {
-    //                     youWin();
-    //                 }
-    //             }
-    //         }
-    //         countFour = 0;
-    //     }
-    //     countFour = 0;
+    for (let i = 0; i < board[lastUpdateLine].length; i++) {
+        if (board[lastUpdateLine][i] === currentPlayer) {
+            countFour++;
+            if (countFour === 4) {
+                youWin();
+            }
+        } else {
+            countFour = 0;
+        }
+    }
+
     //     // diagonal descent
     //     for (let n = 1; n < 4; n++) {
     //         lastUpdateLine += n;
@@ -186,22 +205,4 @@ function checkWin() {
     //         }
     //     }
     //     countFour = 0;
-}
-
-// event listener(s) to update game state
-for (let i = 0; i < columns.length; i++) {
-    columns[i].addEventListener("mousedown", function () {
-        if (playCount % 2 === 0) {
-            currentPlayer = 1;
-            columns[i].innerHTML += '<div class="player1"></div>';
-        } else {
-            currentPlayer = 2;
-
-            columns[i].innerHTML += '<div class="player2"></div>';
-        }
-
-        selectedColumn = i;
-        updateGameState(selectedColumn, currentPlayer);
-        checkWin();
-    });
 }
