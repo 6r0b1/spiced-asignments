@@ -12,7 +12,7 @@ let board = [
 // some variables
 
 let columns = document.querySelectorAll(".column");
-let gameBoard = document.querySelector(".gameBoard");
+let youWinMessage = document.querySelector(".youWinInvisible");
 
 let playCount = 0;
 let currentPlayer;
@@ -47,9 +47,12 @@ function updateGameState(selectedColumn, currentPlayer) {
                 board[j][selectedColumn] = currentPlayer;
                 lastUpdateLine = j;
                 playCount++;
-                console.log(board);
-                columns[selectedColumn].innerHTML +=
-                    '<div class="player' + currentPlayer + '"></div>';
+                let newPiece = document.createElement("div");
+                newPiece.classList.add("player" + currentPlayer, "newPiece");
+                columns[selectedColumn].appendChild(newPiece);
+                setTimeout(() => {
+                    newPiece.classList.remove("newPiece");
+                }, 300);
                 break;
             }
         }
@@ -71,8 +74,8 @@ function youWin() {
             [0, 0, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0, 0],
         ];
-        gameBoard.innerHTML =
-            '<div class="column"></div><div class="column"></div><div class="column"></div><div class="column"></div><div class="column"></div><div class="column"></div><div class="column"></div>';
+        youWinMessage.classList.remove("youWinInvisible");
+        youWinMessage.classList.add("youWin");
     }, 1000);
 }
 
@@ -163,100 +166,4 @@ function checkWin() {
             }
         }
     }
-
-    // for (let n = 1; n < 4; n++) {
-    //     lastUpdateLine += n;
-    //     selectedColumn += n;
-    //     if (lastUpdateLine < 6 && selectedColumn < 7) {
-    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //             countFour++;
-    //             console.log(countFour);
-    //             if (countFour === 3) {
-    //                 youWin();
-    //             }
-    //         } else {
-    //             lastUpdateLine -= n;
-    //             selectedColumn -= n;
-    //             break;
-    //         }
-    //         lastUpdateLine -= n;
-    //         selectedColumn -= n;
-    //     } else {
-    //         lastUpdateLine -= n;
-    //         selectedColumn -= n;
-    //     }
-    // }
-
-    // for (let p = 1; p < 4; p++) {
-    //     lastUpdateLine -= p;
-    //     selectedColumn -= p;
-    //     if (lastUpdateLine >= 0 && selectedColumn >= 0) {
-    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //             countFour++;
-    //             if (countFour === 3) {
-    //                 youWin();
-    //             }
-    //         } else {
-    //             lastUpdateLine -= p;
-    //             selectedColumn -= p;
-    //             break;
-    //         }
-    //         lastUpdateLine -= p;
-    //         selectedColumn -= p;
-    //     } else {
-    //         lastUpdateLine -= p;
-    //         selectedColumn -= p;
-    //     }
-    // }
-    // countFour = 0;
-    // // diagonal ascend
-    // console.log("ascending");
-    // for (let q = 1; q < 4; q++) {
-    //     lastUpdateLine -= q;
-    //     selectedColumn += q;
-    //     if (lastUpdateLine >= 0 && selectedColumn < 7) {
-    //         console.log(lastUpdateLine);
-    //         console.log(selectedColumn);
-    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //             console.log("onnit");
-    //             countFour++;
-    //             console.log(countFour);
-    //             if (countFour === 3) {
-    //                 youWin();
-    //             }
-    //         } else {
-    //             lastUpdateLine += q;
-    //             selectedColumn -= q;
-    //             break;
-    //         }
-    //         lastUpdateLine += q;
-    //         selectedColumn -= q;
-    //     } else {
-    //         lastUpdateLine += q;
-    //         selectedColumn -= q;
-    //     }
-    // }
-
-    // for (let r = 1; r < 4; r++) {
-    //     lastUpdateLine += r;
-    //     selectedColumn -= r;
-    //     if (lastUpdateLine < 7 && selectedColumn >= 0) {
-    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //             countFour++;
-    //             if (countFour === 3) {
-    //                 youWin();
-    //             }
-    //         } else {
-    //             lastUpdateLine -= r;
-    //             selectedColumn += r;
-    //             break;
-    //         }
-    //         lastUpdateLine -= r;
-    //         selectedColumn += r;
-    //     } else {
-    //         lastUpdateLine -= r;
-    //         selectedColumn += r;
-    //     }
-    // }
-    // countFour = 0;
 }
