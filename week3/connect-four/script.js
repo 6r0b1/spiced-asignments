@@ -109,100 +109,154 @@ function checkWin() {
         }
     }
 
-    //     // diagonal descent
-    //     for (let n = 1; n < 4; n++) {
-    //         lastUpdateLine += n;
-    //         selectedColumn += n;
-    //         if (lastUpdateLine < 6 && selectedColumn < 7) {
-    //             if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //                 countFour++;
-    //                 console.log(countFour);
-    //                 if (countFour === 3) {
-    //                     youWin();
-    //                 }
-    //             } else {
-    //                 lastUpdateLine -= n;
-    //                 selectedColumn -= n;
-    //                 break;
+    countFour = 0;
+
+    // diagonal descent
+
+    let checkDiagonalY = lastUpdateLine - 4;
+    let checkDiagonalX = selectedColumn - 4;
+
+    for (let i = 0; i < 8; i++) {
+        checkDiagonalY++;
+        checkDiagonalX++;
+
+        if (
+            checkDiagonalY >= 0 &&
+            checkDiagonalY <= 5 &&
+            checkDiagonalX >= 0 &&
+            checkDiagonalX <= 6
+        ) {
+            if (board[checkDiagonalY][checkDiagonalX] === currentPlayer) {
+                countFour++;
+                if (countFour === 4) {
+                    youWin();
+                }
+            } else {
+                countFour = 0;
+            }
+        }
+    }
+
+    countFour = 0;
+
+    // diagonal ascend
+
+    checkDiagonalY = lastUpdateLine + 4;
+    checkDiagonalX = selectedColumn - 4;
+
+    for (let i = 0; i < 8; i++) {
+        checkDiagonalY--;
+        checkDiagonalX++;
+        if (
+            checkDiagonalY >= 0 &&
+            checkDiagonalY <= 5 &&
+            checkDiagonalX >= 0 &&
+            checkDiagonalX <= 6
+        ) {
+            if (board[checkDiagonalY][checkDiagonalX] === currentPlayer) {
+                countFour++;
+                if (countFour === 4) {
+                    youWin();
+                }
+            } else {
+                countFour = 0;
+            }
+        }
+    }
+
+    // for (let n = 1; n < 4; n++) {
+    //     lastUpdateLine += n;
+    //     selectedColumn += n;
+    //     if (lastUpdateLine < 6 && selectedColumn < 7) {
+    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
+    //             countFour++;
+    //             console.log(countFour);
+    //             if (countFour === 3) {
+    //                 youWin();
     //             }
-    //             lastUpdateLine -= n;
-    //             selectedColumn -= n;
     //         } else {
     //             lastUpdateLine -= n;
     //             selectedColumn -= n;
+    //             break;
     //         }
+    //         lastUpdateLine -= n;
+    //         selectedColumn -= n;
+    //     } else {
+    //         lastUpdateLine -= n;
+    //         selectedColumn -= n;
     //     }
+    // }
 
-    //     for (let p = 1; p < 4; p++) {
+    // for (let p = 1; p < 4; p++) {
+    //     lastUpdateLine -= p;
+    //     selectedColumn -= p;
+    //     if (lastUpdateLine >= 0 && selectedColumn >= 0) {
+    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
+    //             countFour++;
+    //             if (countFour === 3) {
+    //                 youWin();
+    //             }
+    //         } else {
+    //             lastUpdateLine -= p;
+    //             selectedColumn -= p;
+    //             break;
+    //         }
     //         lastUpdateLine -= p;
     //         selectedColumn -= p;
-    //         if (lastUpdateLine >= 0 && selectedColumn >= 0) {
-    //             if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //                 countFour++;
-    //                 if (countFour === 3) {
-    //                     youWin();
-    //                 }
-    //             } else {
-    //                 lastUpdateLine -= p;
-    //                 selectedColumn -= p;
-    //                 break;
-    //             }
-    //             lastUpdateLine -= p;
-    //             selectedColumn -= p;
-    //         } else {
-    //             lastUpdateLine -= p;
-    //             selectedColumn -= p;
-    //         }
+    //     } else {
+    //         lastUpdateLine -= p;
+    //         selectedColumn -= p;
     //     }
-    //     countFour = 0;
-    //     // diagonal ascend
-    //     console.log("ascending");
-    //     for (let q = 1; q < 4; q++) {
-    //         lastUpdateLine -= q;
-    //         selectedColumn += q;
-    //         if (lastUpdateLine >= 0 && selectedColumn < 7) {
-    //             console.log(lastUpdateLine);
-    //             console.log(selectedColumn);
-    //             if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //                 console.log("onnit");
-    //                 countFour++;
-    //                 console.log(countFour);
-    //                 if (countFour === 3) {
-    //                     youWin();
-    //                 }
-    //             } else {
-    //                 lastUpdateLine += q;
-    //                 selectedColumn -= q;
-    //                 break;
+    // }
+    // countFour = 0;
+    // // diagonal ascend
+    // console.log("ascending");
+    // for (let q = 1; q < 4; q++) {
+    //     lastUpdateLine -= q;
+    //     selectedColumn += q;
+    //     if (lastUpdateLine >= 0 && selectedColumn < 7) {
+    //         console.log(lastUpdateLine);
+    //         console.log(selectedColumn);
+    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
+    //             console.log("onnit");
+    //             countFour++;
+    //             console.log(countFour);
+    //             if (countFour === 3) {
+    //                 youWin();
     //             }
-    //             lastUpdateLine += q;
-    //             selectedColumn -= q;
     //         } else {
     //             lastUpdateLine += q;
     //             selectedColumn -= q;
+    //             break;
     //         }
+    //         lastUpdateLine += q;
+    //         selectedColumn -= q;
+    //     } else {
+    //         lastUpdateLine += q;
+    //         selectedColumn -= q;
     //     }
+    // }
 
-    //     for (let r = 1; r < 4; r++) {
-    //         lastUpdateLine += r;
-    //         selectedColumn -= r;
-    //         if (lastUpdateLine < 7 && selectedColumn >= 0) {
-    //             if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
-    //                 countFour++;
-    //                 if (countFour === 3) {
-    //                     youWin();
-    //                 }
-    //             } else {
-    //                 lastUpdateLine -= r;
-    //                 selectedColumn += r;
-    //                 break;
+    // for (let r = 1; r < 4; r++) {
+    //     lastUpdateLine += r;
+    //     selectedColumn -= r;
+    //     if (lastUpdateLine < 7 && selectedColumn >= 0) {
+    //         if (board[lastUpdateLine][selectedColumn] === currentPlayer) {
+    //             countFour++;
+    //             if (countFour === 3) {
+    //                 youWin();
     //             }
-    //             lastUpdateLine -= r;
-    //             selectedColumn += r;
     //         } else {
     //             lastUpdateLine -= r;
     //             selectedColumn += r;
+    //             break;
     //         }
+    //         lastUpdateLine -= r;
+    //         selectedColumn += r;
+    //     } else {
+    //         lastUpdateLine -= r;
+    //         selectedColumn += r;
     //     }
-    //     countFour = 0;
+    // }
+    // countFour = 0;
 }
