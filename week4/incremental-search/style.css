@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.error {
+    color: #666;
+}
+
+.suggestions {
+    margin: 10px 5px;
+}
+
+.mouseover {
+    background-color: blanchedalmond;
+    color: #777;
+}
+
+.sugestions_hidden {
+    display: none;
+}
+
+.results {
+}
