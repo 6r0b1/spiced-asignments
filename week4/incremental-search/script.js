@@ -8,23 +8,6 @@
 
 // // 2. necessary functions and listeners
 
-// // Filter country list for user input
-// // function filterItems(countries, searchTyped) {
-// //     return countries.filter(
-// //         (el) => el.toLowerCase().startsWith(searchTyped.toLowerCase()) // if possible rather go with includes
-// //     );
-// // }
-
-// // Event listener for input blur
-
-// searchField.addEventListener("blur", function (e) {
-//     suggestions.classList.add("sugestions_hidden");
-// });
-
-// searchField.addEventListener("focus", function (e) {
-//     suggestions.classList.remove("sugestions_hidden");
-// });
-
 // // 3. add event listener to input field
 
 // searchField.addEventListener("input", function () {
@@ -38,12 +21,6 @@
 //     // Output into new string: '<div>'+filterCountries[0]+'</div> ...
 //     // first run the filter with user input as argument
 //     let resultsArray = filterItems(countries, searchField.value);
-
-//     // error message for no results
-//     if (resultsArray.length === 0) {
-//         searchField.classList.add("error");
-//         searchField.value = "Not a known country";
-//     }
 
 //     // write a div for every item in the results array
 //     for (let j = 0; j < resultsArray.length; j++) {
@@ -96,6 +73,7 @@ function getResultsFromCountrys(userQuery) {
         success: function (data) {
             console.log(data);
             buildSuggestions(data, userQuery);
+            noResults(data);
         },
     });
 }
@@ -112,3 +90,22 @@ function buildSuggestions(queryReturn, originalQuery) {
         suggestions.innerHTML = resultsString;
     }
 }
+
+// error message for no results
+
+function noResults(queryReturn) {
+    if (queryReturn.length === 0) {
+        searchField.classList.add("error");
+        searchField.value = "Not a known country";
+    }
+}
+
+// Event listener for input blur
+
+searchField.addEventListener("blur", function (e) {
+    suggestions.classList.add("sugestions_hidden");
+});
+
+searchField.addEventListener("focus", function (e) {
+    suggestions.classList.remove("sugestions_hidden");
+});
