@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <script id="authors" type="text/x-handlebars-template">
+    
+        {{#authorObjects}}
+            <h2>{{name}}</h2>
+
+            <img class="author_img" src="{{photo}}" alt="">
+            
+            <h3>Born: {{born}}, Died: {{died}}</h3>
+            ---
+            {{#selectedWritings}}
+               <h3>{{this}}</h3>
+            {{/selectedWritings}}
+            ---
+            <h3><i>{{quote}}</i></h3>
+            <p>----------</p>
+        {{/authorObjects}}
+        
+
+</script>
+</body>
+</html>
