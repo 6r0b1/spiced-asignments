@@ -12,7 +12,7 @@
     });
 
     // get data
-
+    let info;
     let searchType;
     let searchTerm;
     let handlebarsObject;
@@ -35,7 +35,7 @@
             },
             success: function (data) {
                 console.log(data);
-                let info = data.artists || data.albums;
+                info = data.artists || data.albums;
                 // put into handlebars variable
                 handlebarsObject = info.items;
                 console.log(handlebarsObject);
@@ -49,7 +49,7 @@
 
     // put into handlebars variable
 
-    document.querySelector("#result_list").innerHTML =
+    document.querySelector("#results").innerHTML =
         Handlebars.templates.result_list({
             resultObjects: [
                 {
