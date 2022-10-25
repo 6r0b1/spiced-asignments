@@ -35,14 +35,26 @@ const { join } = require("path");
 const fs = require("fs");
 
 const mapSizes = (path) => {
+    let objectAdress = {};
     let data = fs.readdirSync(path, { withFileTypes: true });
+
     data.forEach((entry) => {
+        let entryPath = join(path, entry.name);
         if (entry.isFile()) {
-            console.log(entry);
+            // make new property entry.name: entry.size
+            objectAdress[entry.name] = fs.statSync(entryPath).size;
         } else if (entry.isDirectory()) {
-            mapSizes(join(path, entry.name));
+            objectAdress[entry.name] = mapSizes(entryPath);
+
+            // make new property entry.name: {}
+            // object 'address'?
         }
     });
+    return objectAdress;
 };
 
-mapSizes(join(__dirname, "files"));
+let fileMap = mapSizes(join(__dirname, "files"));
+
+let data = JSON.stringify(fileMap, null, 4);
+console.log(data);
+fs.writeFileSync("files.json", data);
