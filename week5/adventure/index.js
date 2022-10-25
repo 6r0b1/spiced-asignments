@@ -29,12 +29,14 @@ function askQuestion(question, answers) {
     rl.question(prompt, (answer) => {
         if (answersArray.includes(answer)) {
             const data = answers[answer];
-            askQuestion(data.question, data.answers);
+            if (data.answers) {
+                askQuestion(data.question, data.answers);
+            } else {
+                console.log(data.question);
+                rl.close();
+            }
         } else {
-            askQuestion(
-                `There she is now. [${Object.keys(answers)}]\n> `,
-                answers
-            );
+            askQuestion(question, answers);
         }
     });
 }
@@ -58,15 +60,19 @@ let answers = {
     pet: {
         question: `She wants food now.`,
         answers: {
-            goSleep: {
-                question: `The next morning`,
+            give: {
+                question: `She s happy, so are you.`,
                 answers: {
-                    getBreakfast: `She s happy, so are you`,
-                    makeCoffee: `Great, angry cat. Lots of noise`,
+                    goSleep: {
+                        question: `You wake up Sunday. Lots more tome to rest.`,
+                    },
+                    watchTV: {
+                        question: `F**K. It s monday. What did you do?`,
+                    },
                 },
             },
-            watchTV: `Great, it s Monday. You are f***ed!`,
+            goSleep: { question: `Great, angry cat. Lots of noise.` },
         },
     },
-    goSleep: { question: `Cat hates you. The end` },
+    goSleep: { question: `Cat hates you. The end.` },
 };
