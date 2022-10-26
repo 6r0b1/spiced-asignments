@@ -71,3 +71,5 @@ Wed Oct 26 2022 15:18:10 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/
 Wed Oct 26 2022 15:18:14 GMT+0200 (Mitteleuropäische Sommerzeit)	POST	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
 Wed Oct 26 2022 15:18:21 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
 Wed Oct 26 2022 15:18:26 GMT+0200 (Mitteleuropäische Sommerzeit)	POST	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Wed Oct 26 2022 15:29:01 GMT+0200 (Mitteleuropäische Sommerzeit)	|	Method: GET	URL: /	User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Wed Oct 26 2022 15:29:05 GMT+0200 (Mitteleuropäische Sommerzeit)	|	Method: POST	URL: /	User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
