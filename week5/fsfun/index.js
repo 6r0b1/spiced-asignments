@@ -35,19 +35,20 @@ const { join } = require("path");
 const fs = require("fs");
 
 const mapSizes = (path) => {
+    // set current item as empty object, because an object it shall be
     let currentItem = {};
     let data = fs.readdirSync(path, { withFileTypes: true });
 
     data.forEach((entry) => {
         let entryPath = join(path, entry.name);
         if (entry.isFile()) {
-            // make new property entry.name: entry.size
+            // make new property entry.name: entry.size, this will be an end point for recursion
             currentItem[entry.name] = fs.statSync(entryPath).size;
         } else if (entry.isDirectory()) {
             currentItem[entry.name] = mapSizes(entryPath);
-
-            // make new property entry.name: {}
-            // object 'address'?
+            // at the end of each mapSizes {} is written because of currentItem reset at top
+            // so callback inside if assigning value to property entry.name generates
+            // braces inside braces inside braces until they are filled w/ end points
         }
     });
     return currentItem;
