@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>  
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="script_hard.js" defer></script> -->
+    <script src="script_soft.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section id="search">
+            <img id="spotify_logo" src="./assets/pngwing.com.png" alt="" />
+            <form id="search_form">
+                <input
+                    name="q"
+                    id="user_query"
+                    type="text"
+                    placeholder="Search the green stuff to your hearts content!"
+                />
+                <select name="type" id="search_type">
+                    <option value="artist">Artist</option>
+                    <option value="album">Album</option>
+                </select>
+                <button id="submit_query">Send!</button>
+            </form>
+        </section>
+        <section id="query_summary">
+            <!-- js will render summary here -->
+        </section>
+        <section id="results">
+        <script id="result_list" type="text/x-handlebars-template"> 
+            {{#items}}
+                <div class="results_item">
+                <a class="image_link" href="{{external_urls.[spotify]}}">
+                    <img class="covers_artists" src="{{images.[0].[url]}}" alt="cover_art">
+                </a>
+                <div class="details"><a href="{{external_urls.[spotify]}}"><p>{{name}}</p></a><p>Further information</p><p>Monthly listeners</p></div></div>
+            {{/items}}
+        </script>
+        </section>
+        <section id="paginate">
+            <!-- js will render Load More button here -->
+        </section>
+    </body>
+</html>

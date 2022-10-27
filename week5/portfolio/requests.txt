@@ -1,0 +1,146 @@
+Thu Oct 27 2022 13:15:58 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:16:15 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/projects	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:17:34 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/projects/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:17:52 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/projects/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:17:55 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/projects/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:18:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/projects/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:19:39 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/projects/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:19:48 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/projects/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:28:39 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:35:03 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:35:03 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:35:03 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:35:44 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:36:02 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:36:02 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:36:02 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:36:02 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit1.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:36:02 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit2.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:36:02 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit3.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:36:02 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit4.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:37:56 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:38:10 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:38:20 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:39:15 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:39:48 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:40:17 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:40:26 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:40:48 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:41:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:41:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:41:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:41:25 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:43:10 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:44:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:44:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:45:22 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:46:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:46:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:46:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:46:25 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:47:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:47:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:47:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:47:15 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:47:46 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:54:35 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:55:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:55:41 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:55:41 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:55:41 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:55:47 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:55:55 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:56:20 GMT+0200 (Mitteleuropäische Sommerzeit)	POST	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 13:56:28 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 13:57:07 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 13:57:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	insomnia/2022.6.0
+Thu Oct 27 2022 13:57:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Insomnia/2022.6.0 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36
+Thu Oct 27 2022 13:57:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Insomnia/2022.6.0 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36
+Thu Oct 27 2022 13:57:25 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 13:58:05 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:58:44 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 13:59:08 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:00:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:02:25 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:02:37 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:04:47 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slfp	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:08:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:08:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:08:04 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:08:08 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:08:45 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:08:58 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:09:29 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:10:44 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:10:49 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slfrw	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit1.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit2.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit3.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:18 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/kitty-carousel/assets/kit4.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:11:47 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slfrw	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:12:32 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:12:53 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:15:24 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:15:40 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:15:49 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:15:49 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:15:50 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:15:50 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:15:50 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:15:50 GMT+0200 (Mitteleuropäische Sommerzeit)	PATCH	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:16:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:16:46 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:18:06 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:19:01 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/sjoie	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:20:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:21:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:21:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/Users/veit/Dropbox/05_spiced/okra-code/week5/portfolio/projects/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:14 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/Users/veit/Dropbox/05_spiced/okra-code/week5/portfolio/projects/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:28 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:28 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:28 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:28 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:47 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:47 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:47 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:22:47 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:24:10 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:24:10 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	insomnia/2022.6.0
+Thu Oct 27 2022 14:24:11 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Insomnia/2022.6.0 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36
+Thu Oct 27 2022 14:24:11 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Insomnia/2022.6.0 Chrome/102.0.5005.63 Electron/19.0.3 Safari/537.36
+Thu Oct 27 2022 14:24:48 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/vier-gewinnt/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:07 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:07 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:07 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:09 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/assets/red.png	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:12 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/assets/blue.png	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:33 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/assets/2250cx.jpg	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:38 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:38 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:25:38 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:26:26 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:26:26 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:26:26 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/connect-four/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:29:39 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/jguurj	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:29:56 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/jguurj	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:30:24 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/jguurj	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:30:30 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:31:06 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/hhh	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:31:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/hhh	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:31:19 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:32:39 GMT+0200 (Mitteleuropäische Sommerzeit)	PUT	/slider	insomnia/2022.6.0
+Thu Oct 27 2022 14:35:31 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/adventure/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:35:31 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:35:58 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:39:31 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/jguurj	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:39:32 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:39:42 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/slider/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:41:33 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:42:07 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:42:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:43:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:45:24 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Oct 27 2022 14:45:36 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0

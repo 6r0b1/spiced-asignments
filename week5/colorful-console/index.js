@@ -4,7 +4,7 @@ const chalk = require("chalk");
 
 http.createServer((request, response) => {
     // Store properties of request for later use
-    const { headers, method, url } = request;
+    // const { headers, method, url } = request;
 
     // log request to text file
     let date = new Date();
