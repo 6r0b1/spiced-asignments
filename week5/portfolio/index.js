@@ -3,6 +3,7 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const { join } = require("path");
 
 // variables
 
@@ -16,6 +17,44 @@ const fileLUT = {
     ".png": "image/png",
     ".svg": "image/svg+xml",
 };
+
+// build site map
+
+const mapDirectories = (path) => {
+    // set current item as empty object, because an object it shall be
+    let currentItem = {};
+    let data = fs.readdirSync(path, { withFileTypes: true });
+
+    data.forEach((entry) => {
+        let entryPath = join(path, entry.name);
+        if (entry.isFile()) {
+            // make new property entry.name: entry.size, this will be an end point for recursion
+            // -> for a siteMap this is not needed <-
+            // currentItem[entry.name] = fs.statSync(entryPath).size;
+        } else if (entry.isDirectory()) {
+            currentItem[entry.name] = mapDirectories(entryPath);
+            // at the end of each mapSizes {} is written because of currentItem reset at top
+            // so callback inside if assigning value to property entry.name generates
+            // braces inside braces inside braces until they are filled w/ end points
+        }
+    });
+    return currentItem;
+};
+
+let siteMap = mapDirectories(join(__dirname, "projects"));
+console.log(siteMap);
+
+// bild homepage html
+
+let homeHTML = "";
+let subDirs = Object.keys(siteMap);
+
+for (const directory of subDirs) {
+    homeHTML += `<a href="${directory}/">${directory}</a><br>`;
+}
+console.log(homeHTML);
+
+// serve (don t protect)
 
 http.createServer((request, response) => {
     // request log
@@ -54,8 +93,7 @@ http.createServer((request, response) => {
     // okay! -> home?
     if (request.url === "/") {
         response.writeHead(200, { "Content-Type": "text/html" });
-        const responseBody =
-            "<!doctype html><html><title>Hello World!</title><p>Hello World!</p></html>";
+        const responseBody = `<!doctype html><html><title>veits portfolio</title><h1>What a wonderful portfolio</h1>${homeHTML}</html>`;
         response.end(responseBody);
         return;
     }
