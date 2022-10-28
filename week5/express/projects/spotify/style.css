@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(40, 182, 40);
+}
+
+/* for the search form */
+
+#search {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#spotify_logo {
+    height: 40px;
+    margin: 10px;
+    aspect-ratio: 1;
+}
+
+#user_query {
+    width: 350px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#search_type {
+    width: 80px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#submit_query {
+    width: 80px;
+    height: 30px;
+}
+
+/* fore the summary */
+
+/* for the results */
+
+#results {
+    display: flex;
+    flex-direction: column;
+}
+
+.results_item {
+    margin: 10px;
+    display: flex;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.image_link {
+    width: 30%;
+    padding: 10px;
+}
+
+.covers_artists {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* load more results */
+
+#paginate {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#more {
+    width: 80px;
+    height: 30px;
+}
