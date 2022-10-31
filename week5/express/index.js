@@ -7,6 +7,10 @@ const { join } = require("path");
 const express = require("express");
 const app = express();
 
+// store original req.url in this
+
+let originalRout;
+
 app.use(require("cookie-parser")());
 app.use(
     express.urlencoded({
@@ -32,9 +36,11 @@ app.post("/cookies", (req, res) => {
     // if checkbox is checked, set cookie
     if (req.body.cookies === "on") {
         res.cookie("consent", 1);
-        res.send("Alright. You may enter.");
+        // send user back where they came from
+        res.redirect(originalRout);
         return;
     }
+    // no cookies? tell user what you think of them
     res.send("Sod off!");
 });
 
@@ -45,6 +51,8 @@ app.post("/cookies", (req, res) => {
 app.get("*", (req, res, next) => {
     const cookies = req.cookies;
     if (cookies.consent !== "1") {
+        // update original rout for later use
+        originalRout = req.url;
         res.redirect("/cookies");
     }
     next();
