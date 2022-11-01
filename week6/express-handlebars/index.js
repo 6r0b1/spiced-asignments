@@ -7,10 +7,43 @@ const { join } = require("path");
 const basicAuth = require("basic-auth");
 const express = require("express");
 const app = express();
+const handlebars = require("express-handlebars");
+
+app.engine("handlebars", handlebars.engine());
+app.set("view engine", "handlebars");
 
 // store original req.url in this
 
 let originalRout;
+
+// site map
+
+const mapDirectories = (path) => {
+    // set current item as empty object, because an object it shall be
+    let currentItem = {};
+    let data = fs.readdirSync(path, { withFileTypes: true });
+
+    data.forEach((entry) => {
+        let entryPath = join(path, entry.name);
+        if (entry.isFile()) {
+            // make new property entry.name: entry.size, this will be an end point for recursion
+            // -> for a siteMap this is not needed <-
+            // currentItem[entry.name] = fs.statSync(entryPath).size;
+        } else if (entry.isDirectory()) {
+            currentItem[entry.name] = entry.name
+                .split("-")
+                .join(" ")
+                .toUpperCase();
+            // at the end of each mapSizes {} is written because of currentItem reset at top
+            // so callback inside if assigning value to property entry.name generates
+            // braces inside braces inside braces until they are filled w/ end points
+        }
+    });
+    return currentItem;
+};
+
+let siteMap = mapDirectories(join(__dirname, "projects"));
+console.log(siteMap);
 
 // authentication setup
 
@@ -46,7 +79,7 @@ app.get("/", (req, res) => {
         console.log(originalRout);
         res.redirect("/cookies");
     }
-    res.send("Hi there!");
+    res.render("home", { siteMap: siteMap });
 });
 
 app.get("/projects/*", (req, res, next) => {
