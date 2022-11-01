@@ -16,6 +16,13 @@ app.set("view engine", "handlebars");
 
 let originalRout;
 
+function capitalizeFirstLetter(directory) {
+    let dirArray = directory.split("-").map((folderPart) => {
+        return folderPart[0].toUpperCase() + folderPart.slice(1);
+    });
+    return dirArray.join(" ");
+}
+
 // site map
 
 const mapDirectories = (path) => {
@@ -30,10 +37,7 @@ const mapDirectories = (path) => {
             // -> for a siteMap this is not needed <-
             // currentItem[entry.name] = fs.statSync(entryPath).size;
         } else if (entry.isDirectory()) {
-            currentItem[entry.name] = entry.name
-                .split("-")
-                .join(" ")
-                .toUpperCase();
+            currentItem[entry.name] = capitalizeFirstLetter(entry.name);
             // at the end of each mapSizes {} is written because of currentItem reset at top
             // so callback inside if assigning value to property entry.name generates
             // braces inside braces inside braces until they are filled w/ end points
