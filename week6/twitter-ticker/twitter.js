@@ -49,7 +49,7 @@ module.exports.getToken = (callback) => {
 module.exports.getTweets = (token, callback) => {
     const config = {
         host: "api.twitter.com",
-        path: "/1.1/statuses/user_timeline.json?screen_name=nasa",
+        path: "/1.1/statuses/user_timeline.json?screen_name=theonion",
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`,
@@ -79,12 +79,15 @@ module.exports.filterTweets = (tweets) => {
         (tweet) => tweet.entities.urls.length > 0
     );
     let tweetsAndURLs = [];
-    tweetsWithURLs.map((tweet) =>
+    tweetsWithURLs.map((tweet) => {
+        let tweetText = tweet.text;
+        let pureText = tweetText.split("http");
+        console.log(pureText);
         tweetsAndURLs.push({
-            headline: tweet.text,
+            headline: pureText[0],
             url: tweet.entities.urls[0].url,
-        })
-    );
+        });
+    });
     console.log(tweetsAndURLs);
 
     return tweetsAndURLs;
