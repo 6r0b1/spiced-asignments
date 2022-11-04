@@ -37,7 +37,13 @@ const mapDirectories = (path) => {
             // -> for a siteMap this is not needed <-
             // currentItem[entry.name] = fs.statSync(entryPath).size;
         } else if (entry.isDirectory()) {
-            currentItem[entry.name] = capitalizeFirstLetter(entry.name);
+            currentItem[entry.name] = {
+                title: capitalizeFirstLetter(entry.name),
+                description: fs.readFileSync(
+                    join(entryPath, "description.txt"),
+                    "utf8"
+                ),
+            };
             // at the end of each mapSizes {} is written because of currentItem reset at top
             // so callback inside if assigning value to property entry.name generates
             // braces inside braces inside braces until they are filled w/ end points

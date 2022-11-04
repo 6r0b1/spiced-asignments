@@ -176,3 +176,9 @@ Fri Oct 28 2022 12:00:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/spotify/	
 Fri Oct 28 2022 12:00:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/spotify/script_soft.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
 Fri Oct 28 2022 12:00:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/spotify/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
 Fri Oct 28 2022 12:00:51 GMT+0200 (Mitteleuropäische Sommerzeit)	GET	/spotify/assets/pngwing.com.png	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Nov 03 2022 13:53:16 GMT+0100 (Central European Standard Time)	GET	/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Nov 03 2022 13:53:16 GMT+0100 (Central European Standard Time)	GET	/favicon.ico	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Nov 03 2022 13:53:20 GMT+0100 (Central European Standard Time)	GET	/ticker/	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Nov 03 2022 13:53:20 GMT+0100 (Central European Standard Time)	GET	/ticker/style.css	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Nov 03 2022 13:53:20 GMT+0100 (Central European Standard Time)	GET	/ticker/script.js	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
+Thu Nov 03 2022 13:53:22 GMT+0100 (Central European Standard Time)	GET	/ticker/links.json	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
