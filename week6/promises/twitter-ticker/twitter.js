@@ -48,11 +48,11 @@ module.exports.getToken = () => {
     });
 };
 
-module.exports.getTweets = (token, callback) => {
+module.exports.getTweets = (token, source) => {
     return new Promise((resolve, reject) => {
         const config = {
             host: "api.twitter.com",
-            path: "/1.1/statuses/user_timeline.json?screen_name=theonion",
+            path: `/1.1/statuses/user_timeline.json?screen_name=${source}`,
             method: "GET",
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -79,8 +79,12 @@ module.exports.getTweets = (token, callback) => {
 };
 
 module.exports.filterTweets = (tweets) => {
-    let tweetsWithURLs = tweets.filter(
-        (tweet) => tweet.entities.urls.length > 0
+    let tweetsFlat = tweets.flat();
+    console.log(tweetsFlat[0].entities.urls);
+
+    // console.log(tweetsFlat);
+    let tweetsWithURLs = tweetsFlat.filter(
+        (tweet) => tweet.entities?.urls.length || 0 > 0
     );
     let tweetsAndURLs = [];
     tweetsWithURLs.map((tweet) => {

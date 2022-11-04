@@ -12,31 +12,18 @@ const { PORT } = process.env;
 app.use(express.static(path.join(__dirname, "ticker")));
 
 app.get("/headlines.json", (req, res) => {
-    // 1. get a token
-    // 2. get tweets
-    // 3. filter & format the tweets
-    // 4. respond with JSON
-
     getToken()
-        .then((token) => getTweets(token))
+        .then((token) => {
+            return Promise.all([
+                getTweets(token, "bbc"),
+                getTweets(token, "nyt"),
+                getTweets(token, "nasa"),
+            ]);
+        })
         .then((tweets) => {
             const filteredTweets = filterTweets(tweets);
             res.json(filteredTweets);
         });
-
-    // getToken((error, token) => {
-    //     // check for errors...
-    //     // send back empty JSON if there is an error!
-    //     getTweets(token, (error, tweets) => {
-    //         if (error) {
-    //             console.log(error);
-    //             return;
-    //         }
-    //         // console.log("Got some tweets:", tweets);
-    //         const filteredTweets = filterTweets(tweets);
-    //         res.json(filteredTweets);
-    //     });
-    // });
 });
 
 app.listen(PORT, () => {
