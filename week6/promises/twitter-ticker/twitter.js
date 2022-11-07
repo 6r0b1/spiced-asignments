@@ -80,9 +80,8 @@ module.exports.getTweets = (token, source) => {
 
 module.exports.filterTweets = (tweets) => {
     let tweetsFlat = tweets.flat();
-    console.log(tweetsFlat[0].entities.urls);
 
-    // console.log(tweetsFlat);
+    console.log(tweetsFlat);
     let tweetsWithURLs = tweetsFlat.filter(
         (tweet) => tweet.entities?.urls.length || 0 > 0
     );
@@ -90,13 +89,14 @@ module.exports.filterTweets = (tweets) => {
     tweetsWithURLs.map((tweet) => {
         let tweetText = tweet.text;
         let pureText = tweetText.split("http");
-        console.log(pureText);
+
         tweetsAndURLs.push({
-            headline: pureText[0],
+            date: tweet.created_at,
+            headline: `${pureText[0]}, Source: ${tweet.user.name}`,
             url: tweet.entities.urls[0].url,
         });
     });
-    console.log(tweetsAndURLs);
-
-    return tweetsAndURLs;
+    let sortedTweetsAndURLs = tweetsAndURLs.sort((a, b) => b.date - a.date);
+    console.log(sortedTweetsAndURLs[0]);
+    return sortedTweetsAndURLs;
 };
