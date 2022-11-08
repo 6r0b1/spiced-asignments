@@ -91,12 +91,12 @@ module.exports.filterTweets = (tweets) => {
         let pureText = tweetText.split("http");
 
         tweetsAndURLs.push({
-            date: tweet.created_at,
+            date: new Date(tweet.created_at),
             headline: `${pureText[0]}, Source: ${tweet.user.name}`,
             url: tweet.entities.urls[0].url,
         });
     });
     let sortedTweetsAndURLs = tweetsAndURLs.sort((a, b) => b.date - a.date);
-    console.log(sortedTweetsAndURLs[0]);
+
     return sortedTweetsAndURLs;
 };
